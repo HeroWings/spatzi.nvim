@@ -18,8 +18,8 @@ vim.keymap.set("n", "ö", "`")
 vim.keymap.set("n", "öö", "``")
 
 -- Better buffer switches
-vim.keymap.set("n", "<leader>L", vim.cmd.bnext)
-vim.keymap.set("n", "<leader>H", vim.cmd.bprevious)
+vim.keymap.set("n", "gb", vim.cmd.bnext)
+vim.keymap.set("n", "gB", vim.cmd.bprevious)
 
 -- Snacks keybindings
 vim.keymap.set("n", "<leader>fg", function() Snacks.picker.grep() end, {desc = "grep current directory"})  
@@ -42,3 +42,4 @@ vim.keymap.set("n", "<leader>dw", vim.cmd.q, {desc = "delete current window"} )
 --
 
 vim.keymap.set("i", "<C-k>", "<C-y>" , {desc = "accept suggestion ins-completion"} )
+

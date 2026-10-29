@@ -16,10 +16,12 @@ vim.opt.expandtab = true
 vim.opt.spelllang = { "en", "de", "es",}
 vim.opt.spell = true
 
-vim.g.snacks_animate = false
+vim.g.snacks_animate = true
 vim.g.autoformat = false
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
+
+vim.opt.signcolumn = "yes"
 
 
 vim.g.clipboard = {
@@ -34,5 +36,11 @@ vim.g.clipboard = {
   },
   cache_enabled = true,
 }
+-- Makefile context
+
+
 
 return { }
+
+
+
